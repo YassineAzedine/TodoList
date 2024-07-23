@@ -22,6 +22,7 @@ export class AuthController {
   async register(@Body()  registerDto: RegisterDto) {
     const { email, password , username  } = registerDto;
     
+    
     return this.authService.register(email, password , username); 
   }
 

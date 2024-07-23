@@ -28,6 +28,7 @@ export class AuthService {
 
   async register(email: string, password: string, username: string) {
     
+    console.log(email , password ,username );
     
     return this.usersService.create(email,password,username);
   }
